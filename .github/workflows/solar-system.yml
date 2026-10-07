@@ -70,8 +70,8 @@ jobs:
         - uses: docker/login-action@v3
           with:
             registry: ghcr.io
-            username: '${{ github.19Obed }}'
-            password: '{{ secrets.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 }}'
+            username: '${{ github.actor }}'
+            password: '{{ secrets.GITHUB_TOKEN }}'
         - uses: docker/build-push-action@v6
           with:
             context: .

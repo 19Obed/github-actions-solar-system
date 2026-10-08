@@ -82,7 +82,7 @@ jobs:
       needs: 
       - docker
       environment: 
-        name: deployment
+        name: development
       steps:
         - name: install cluster
           uses: helm/kind-action@v1
